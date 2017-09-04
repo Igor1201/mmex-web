@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+		"publish": "set -e; npm run build; git checkout gh-pages; git pull; git add -A; git commit -m 'publish'; git push origin gh-pages; git checkout master"
   },
   "dependencies": {
     "axios": "^0.16.2",
