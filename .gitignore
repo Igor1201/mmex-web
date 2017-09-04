@@ -1,8 +1,13 @@
 .DS_Store
 node_modules/
-dist/
 npm-debug.log
 yarn-error.log
+
+# gh-pages
+README.md
+package*
+webpack*
+src/
 
 # Editor directories and files
 .idea
